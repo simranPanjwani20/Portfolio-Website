@@ -225,9 +225,23 @@
     letter-spacing: 1px;
     margin-left: 35%;
   }
-  .contact-button:hover {
-    background: var(--hover);
-  }
+ .submitbtn{
+  width: 139px;
+  height: 55px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  margin: 10px;
+  text-align: center;
+  margin-left: 233px;
+
+ }
+ .submitbtn:hover{
+  background-color: rgb(73, 72, 72);
+ }
   .contact{
     background-color: #f1de0e;
   }
@@ -262,9 +276,44 @@
   .copyright a{
     color: #22cf91;
   }
+  .maingit{
+    text-align: center;
+    width: 200vh;
+    margin-top: 20px;
+  }
+  .gitbtn{
+    background-color: #f1de0e;
+    margin-top: 10px;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    width: 197px;
+    height: 50px;
+  }
+  .gitbtn:hover{
+    background-color: rgb(207, 196, 124);
+    color: black;
+  }
+  .gitbtn a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+  }
+  .gitbtn a:hover{
+    color: black;
+    text-decoration: underline;
+  }
 
 
-
+  @media screen and (max-width:1023px) {
+    .maingit{
+      text-align: center;
+      width: auto;
+    }
+  }
   @media (max-width: 991px) {
     .navbar-nav {
       margin-left: 80px;
@@ -284,9 +333,31 @@
       --big-font: 2.4rem;
       --medium-font: 1.2rem;
     }
- 
+    .intro{
+      font-size: 50px;
+    }
+    .submitbtn{
+      width: 139px;
+      height: 55px;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background-color: black;
+      border-radius: 50px;
+      margin: 10px;
+      text-align: center;
+      margin-left: 76px;
+    
+     }
     .about-container {
       grid-template-columns: 1fr;
+    }
+    .wrapper .static-txt{
+      color: #fff;
+      font-size: 50px;
+      font-weight: 400;
+      text-align: center;
     }
     .about-img {
       display: flex;
@@ -303,6 +374,47 @@
       display: flex;
       justify-content: center;
     }
+    
+    .services-content {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 50% 50%;
+      }
+      .services {
+        background-color: #f1de0e;
+        height: 383px;
+        padding: 20px;
+    }
+      .services-box {
+        padding: 2px;
+        width: 352px;
+        height: 132px;
+        font-size: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-radius: 0.5rem;
+        border-bottom: 2px solid var(--main-color);
+        box-shadow: 0 2px 7px rgb(22 34 34 / 81%);
+        background-color: #191c1f;
+        color: #fff;
+    }
+    .portfolio-content {
+      grid-template-columns: 100%;
+      display: grid;
+      gap: 15px;
+      margin-top: 2rem;
+  }
+    .services-box:hover{background-color: white;
+        color: #000;}
+      .wrapper .static-txt {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+    }
+   
     .contact-form form{
       width: 300px;
     }
@@ -364,15 +476,7 @@
       font-weight: 400;
       text-align: center;
   }
-  .dynamic-txts li {
-    list-style: none;
-    color: #f1de0e;
-    font-size: 40px;
-    font-weight: 500;
-    position: relative;
-    top: 0;
-    animation: slide 12s steps(4) infinite;
-}
+  
   }
   @media (max-width: 340px) {
     .information .info-box span {
@@ -388,3 +492,4 @@
       margin-left: 25%;
     }
   }
+
