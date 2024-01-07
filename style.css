@@ -311,11 +311,26 @@ body{
   }
 
 
-  @media screen and (max-width:1023px) {
+  @media screen and (max-width:1024px) {
     .maingit{
       text-align: center;
       width: auto;
     }
+    .services-box {
+      padding: 2px;
+      width: fit-content;
+      height: 132px;
+      font-size: 11px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border-radius: 0.5rem;
+      border-bottom: 2px solid var(--main-color);
+      box-shadow: 0 2px 7px rgb(22 34 34 / 81%);
+      background-color: #191c1f;
+      color: #fff;
+  }
   }
   @media (max-width: 991px) {
     .navbar-nav {
@@ -381,7 +396,7 @@ body{
     .services-content {
       display: grid;
       justify-content: center;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 40% 40%;
       }
       .services {
         background-color: #f1de0e;
@@ -390,7 +405,7 @@ body{
     }
       .services-box {
         padding: 2px;
-        width: 352px;
+        width: fit-content;
         height: 132px;
         font-size: 11px;
         display: flex;
@@ -436,10 +451,6 @@ body{
       font-weight: 400;
       text-align: center;
     }
-    
-
-
-
     .services-content {
     display: grid;
     justify-content: center;
@@ -449,21 +460,6 @@ body{
       background-color: #f1de0e;
       height: 383px;
       padding: 20px;
-  }
-    .services-box {
-      padding: 2px;
-      width: 184px;
-      height: 132px;
-      font-size: 11px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      border-radius: 0.5rem;
-      border-bottom: 2px solid var(--main-color);
-      box-shadow: 0 2px 7px rgb(22 34 34 / 81%);
-      background-color: #191c1f;
-      color: #fff;
   }
   .portfolio-content {
     grid-template-columns: 100%;
@@ -489,10 +485,14 @@ body{
       grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     }
     .contact-form form{
-      width: 300px;
+      width: 100%;
     }
     .contact-button{
       margin-left: 25%;
     }
+    form input, textarea{
+     width: 85%;
+    }
+
   }
 
